@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forms.FormMainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:onClick="openLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login form"/>
+
+    <Button
+        android:onClick="openSigup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up form"/>
+    <Button
+        android:onClick="openFormWithIcons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Forms With Icons"/>
+
+    <Button
+        android:onClick="openFormTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Text Area"/>
+
+    <Button
+        android:onClick="openFormAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Address"/>
+
+    <Button
+        android:onClick="openFormEcommerce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ecommerce Form"/>
+    <Button
+        android:onClick="openFormCardSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Card Form"/>
+
+    <Button
+        android:onClick="openFormCardSignUpWithBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Card Form With Background Image"/>
+
+    <Button
+        android:onClick="openFormSignUpInDarkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Form In Dark Mode"/>
+    <Button
+        android:onClick="openFormSignUpImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Form With Imge"/>
+    <Button
+        android:onClick="openFormAddProductInAProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product In A Project Form"/>
+
+
+</LinearLayout>

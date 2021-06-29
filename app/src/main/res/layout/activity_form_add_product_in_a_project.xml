@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forms.FormAddProductInAProject"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/grey_95"
+            android:src="@drawable/ic_chevron_left"/>
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add New Product"
+            android:textColor="@color/grey_60"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+
+        <ImageButton
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/grey_95"
+            android:src="@drawable/ic_done"/>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:paddingRight="@dimen/spacing_mxlarge"
+            android:paddingLeft="@dimen/spacing_mxlarge"
+            android:paddingBottom="@dimen/spacing_xxlarge"
+            android:paddingTop="@dimen/spacing_medium"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prduct photo"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_large">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/grey_20">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/grey_20"
+                        android:src="@drawable/ic_photo_camera"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Add Product"
+                    android:textColor="@color/grey_60"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:boxStrokeErrorColor="@color/grey_10"
+                app:hintEnabled="false"
+                android:layout_marginTop="@dimen/spacing_middle"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ex. Agency Web"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:textColorHint="@color/grey_20"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional Info"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:boxStrokeErrorColor="@color/grey_10"
+                app:hintEnabled="false"
+                android:layout_marginTop="@dimen/spacing_middle"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Platform,type,etc."
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:textColorHint="@color/grey_20"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Description"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeErrorColor="@color/grey_10"
+                app:hintEnabled="false"
+                android:layout_marginTop="@dimen/spacing_middle"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/medium_lorem_ipsum"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:gravity="start"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:textColor="@color/grey_60"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attachment"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/spacing_middle">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:tint="@color/grey_40"
+                    android:padding="@dimen/spacing_xmedium"
+                    android:src="@drawable/ic_insert_drive"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:layout_weight="1"
+                    android:text="Product File.zip"
+                    android:background="@color/transparent"
+                    android:editable="false"
+                    android:textColor="@color/grey_60"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:tint="@color/grey_40"
+                    android:padding="@dimen/spacing_xmedium"
+                    android:src="@drawable/ic_close"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:textColor="@color/grey_60"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeErrorColor="@color/grey_10"
+                app:hintEnabled="false"
+                android:layout_marginTop="@dimen/spacing_middle"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Input Tag separated with comma"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:textColorHint="@color/grey_40"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

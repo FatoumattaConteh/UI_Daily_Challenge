@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a001_basics_colorsetc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.001_basics_colorsetc">
+        <activity android:name=".lists.ListMainActivity"></activity>
+        <activity android:name=".lists.ListBasics" />
+        <activity android:name=".forms.FormAddProductInAProject" />
+        <activity android:name=".forms.FormSignUpImage" />
+        <activity android:name=".forms.FormSignupDarkMode" />
+        <activity android:name=".forms.FormSignUpCardWithBackgroundImage" />
+        <activity android:name=".forms.FormCardSignUp" />
+        <activity android:name=".forms.FormEcommerce" />
+        <activity android:name=".forms.FormAddress" />
+        <activity android:name=".forms.FormTextArea" />
+        <activity android:name=".cards.CardBasic" />
+        <activity android:name=".buttons.ButtonMainActivity" />
+        <activity android:name=".cards.CardMainActivity" />
+        <activity android:name=".forms.FormProfileWithIcons" />
+        <activity android:name=".forms.FormSignUp" />
+        <activity android:name=".forms.FormLoginActivity" />
+        <activity android:name=".forms.FormMainActivity" />
+        <activity android:name=".cards.CardSplashScreen" />
+        <activity android:name=".cards.CardOverlap" />
+        <activity android:name=".cards.ClickableCards" />
+        <activity android:name=".buttons.Fab_and_More_Buttons" />
+        <activity android:name=".buttons.Button_Toggle_Activity" />
+        <activity android:name=".buttons.ButtonUtilityActivity" />
+        <activity android:name=".buttons.BasicButtonActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

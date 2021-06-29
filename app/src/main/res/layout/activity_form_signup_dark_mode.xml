@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forms.FormSignupDarkMode">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_95"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="false"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            android:background="@color/grey_100"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_large"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:hint="Full Name"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="Email"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:hint="Password"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:hint="Username"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/spacing_mlarge">
+
+                <EditText
+                    android:id="@+id/et_age"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_drop_down"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:background="@drawable/edit_text_round_bg_overlay_white"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:hint="age"
+                    android:textColor="@android:color/white"
+
+                     />
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp"/>
+
+                <EditText
+                    android:id="@+id/et_gender"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_drop_down"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:background="@drawable/edit_text_round_bg_overlay_white"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:hint="Gender"
+                    android:textColor="@android:color/white"
+
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_country"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_drop_down"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:focusable="false"
+                android:editable="false"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:hint="country"
+                android:textColor="@android:color/white"
+
+                />
+
+            <Button
+            android:id="@+id/bt_submit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="-4dp"
+                android:layout_marginLeft="-4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginTop="@dimen/spacing_mlarge"
+            android:text="SUBMIT"
+                android:background="@drawable/btn_rect_primary"
+            android:textColor="@android:color/white"
+
+            />
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
